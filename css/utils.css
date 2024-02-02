@@ -1,0 +1,94 @@
+.outline {
+    outline: 1px solid red;
+}
+
+html, body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+html,
+:host  {
+    font-family: Inter,
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.burger__menu {
+  
+    position: relative;
+    width: 20px;
+    height: 18px;
+  }
+
+  .burger__menu span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  .burger__menu span:nth-child(1) {
+    display: block;
+    top: 0;
+    transition: 0.3s all;
+  }
+  .burger__menu span:nth-child(2) {
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s all;
+  }
+  .burger__menu span:nth-child(3) {
+    display: block;
+    bottom: 0;
+    transition: 0.3s all;
+  }
+
+
+
+
+.activeBurger {
+    z-index: 300;
+    translate: .5s all;
+}
+.activeBurger span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%)  rotate(45deg);
+}
+.activeBurger span:nth-child(2) {
+  opacity: 0;
+}
+.activeBurger span:nth-child(3) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+
+.proba {
+  color: #086194;
+}
+
+.slick-track {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+
+.slick-active {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
