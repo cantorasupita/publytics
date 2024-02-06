@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20240119181650" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/utils.css" >
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <title>Blog</title>
+</head>
+<body>
+  
+    
+<div id="wrapper" class="relative bg-[#FAFAFA]">
+
+
+     <!-- header  ----------------------------------  -->
+    <header id="header" class="z-[100]  w-full font-mont  lg:py-5 py-1 bg-gradient-to-br from-[#0b5580] to-[#002236]">
+        <div class="container  mx-auto px-4">
+            <div class="flex items-center justify-between">
+
+                <div class="lg:basis-2/12 sm:basis-3/12 basis-4/12 ">
+                    <a href="/" class="block py-5" title="logo">
+                        <img src="./img/Logo.png" class="header__logo-img" alt="Logo">
+                    </a>
+                </div>
+                <nav class="basis-8/12  lg:flex  hidden items-center justify-center ">
+                    <ul class="flex font-Mont font-semibold">
+                        <li class="px-5"><a href="" title="Pricing" class="text-white hover:text-[#1D9EE0] transition duration-300">Pricing</a></li>
+                        <li class="px-5"><a href="#" title="Contact Us" class="text-white hover:text-[#1D9EE0] transition duration-300">Contact Us</a></li>
+                        <li class="px-5"><a href="#" title="Faq" class="text-white hover:text-[#1D9EE0] transition duration-300">Faq</a></li>
+                        <li class="px-5"><a href="/blog.html" title="Blog" class="text-white hover:text-[#1D9EE0] transition duration-300">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="basis-3/12 lg:flex  hidden items-center justify-end">
+                    <ul class="flex font-Mont font-semibold">
+                        <li class="">
+                            <a href="#" title="Log In" class="text-white hover:text-[#1D9EE0] transition duration-300">Log In</a>
+                        </li>
+                        <li class="signUp ml-4">
+                            <a href="#" title="Sign Up" class="text-white hover:text-[#1D9EE0] hover:border-[#1D9EE0] transition duration-300 border border-white px-4 py-2 rounded">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="burger__menu lg:hidden"  id="burger__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+   
+    <section id="blog_section" class="container mx-auto sm:my-10 my-4 px-4">
+
+            <div class="px-4 py-10 rounded-2xl border border-solid border-gray-100  bg-white ">
+                
+                <!--content------------------------------------------------------------------------------------->
+                <div class="mx-auto md:w-8/12  ">
+
+                    <div id="title_blog" class="">
+                        <a class="lx:text-base mb-8 text-sm text-[#0170A9] flex hover:text-[#1D9EE0] transition duration-200" href="#">
+                            <img class="rotate-180 mr-1" src="./img/icons/blog_icon_arrow.svg" alt="arrow icon">
+                            <span class="font-medium">All Post</span>               
+                        </a>
+                        <h1 class="lg:text-4xl text-2xl  font-bold font-Mont  mb-2 ">
+                            Google Analytics 4 Users not adding up - The Complete Guide
+                        </h1>
+                        <p class="text-xs text-[#6B6B6B] font-light mb-9">Mar 16, 2020 | Author: Info Publytics</p>
+                        <div class="flex justify-center mb-10">
+                            <img  src="./img/blog_img.png" alt="blog img"/>
+                        </div>
+                    </div>
+
+
+                    <section class="border rounded-md bg-[#fdfdfd] p-4 mb-6 sm:text-base text-sm">
+                        <ul>
+                            <li class="mb-3">
+                                <span class="mr-2 text-gray-500">1.</span>
+                                <a class="text-[#0170A9] hover:text-[#1c3a49] transition duration-200 underline underline-offset-1" href="#Total Users" title="What are Total Users in GA4?">
+                                    What are Total Users in GA4?
+                                </a>
+                            </li>
+                            <li class="mb-3"> 
+                                <span class="mr-2  text-gray-500">2.</span>
+                                <a class="text-[#0170A9] hover:text-[#1c3a49] transition duration-200  underline underline-offset-1" href="#New Users" title="What are Total Users in GA4?">
+                                    What are Active Users in GA4?
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <span class="mr-2  text-gray-500">3.</span>
+                                <a class="text-[#0170A9] hover:text-[#1c3a49] transition duration-200  underline underline-offset-1" href="#New Users" title="What are Total Users in GA4?">
+                                    What are New Users in GA4?
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <span class="mr-2  text-gray-500">4.</span>
+                                <a class="text-[#0170A9] hover:text-[#1c3a49] transition duration-200  underline underline-offset-1" href="#Users in GA4" title="What are Total Users in GA4?">
+                                    What are Returning Users in GA4?
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <span class="mr-2  text-gray-500">5.</span>
+                                <a class="text-[#0170A9] hover:text-[#1c3a49] transition duration-200  underline underline-offset-1" href="#Returning Users" title="What are Total Users in GA4?">
+                                    Why is the users count not equal to the sum of the New and Returning Users?
+                                </a>
+                            </li>
+                        </ul>      
+                    </section>
+                    
+                    <section class="sm:text-base text-sm">
+                        <p class="sm:mb-6 mb-4">
+                            Are you wondering why some numbers about users do not sum up in GA4? Discover why! 
+                        </p>
+                        <p class="sm:mb-6 mb-4">
+                            In this article, we will have a big overview of most of the new metrics in Google Analytics 4,
+                            in order to understand why some numbers seem not to add up correctly. Most of the "critical"
+                            metrics are those regarding Users, which are segmented into four groups:
+                        </p>
+                        <ul class="sm:mb-6 mb-4">
+                            <li>1) Total users</li>
+                            <li>2) Active users</li>
+                            <li>3) New users</li>
+                            <li>4) Returning users</li>
+                        </ul>
+                        <p class="mb-2">&nbsp</p>
+                        <h2 id="Total Users"  class="text-lg sm:text-xl font-bold sm:mb-6 mb-4">What are Total Users in GA4?</h2>
+                        <p class="sm:mb-6 mb-4">
+                            Anybody that sees your website, regardless of whether they leave after a few seconds or stay to subscribe to your product, is considered a total user in GA4. 
+                            Put otherwise, the sum of all users include both engaged and inactive users who say, "Yeah, nevermind." 
+                        </p>
+                        <p class="sm:mb-6 mb-4">Navigate to Reports > Engagement to see the overall number of users. Next, select Events. An event in Google Analytics is a particular user interaction with your website or application. They may, for instance, begin a session or browse the page.). Every action that a person does on your site is broken down on the Events page. For instance, you might discover that only a percentage of the users visiting a page are doing an action that you expected them to do (e.g. clicking a CTA, watching a video), and you can reason on how to increment that percentage.
+                        </p>
+
+                        <p class="sm:mb-2 mb-0">&nbsp</p>
+                        <h2 id="New Users"  class="text-lg sm:text-xl font-bold sm:mb-6 mb-4">What are New Users in GA4?</h2>
+                        <p class="sm:mb-6 mb-4">New Users, as the term says, are the ones that visited your website for the first time (depending on how Google identifies them as unique users, through their identification system): this is logged as a ‘first_visit’ or ‘first_open’ event.
+                        </p>
+
+                        <p class="sm:mb-2 mb-0">&nbsp</p>
+                        <h2 id="Users in GA4" class="text-lg sm:text-xl font-bold sm:mb-6 mb-4">What are Returning Users in GA4?</h2>
+                        <p class="sm:mb-6 mb-4">
+                            Returing users are the only thing that can compare favorably to new ones on your website or app. Why? Retention costs less than acquisition, but that's not all. Additionally, it's a positive indication that your users are happy—even thrilled—and headed toward loyalty. Returning users in Google Analytics 4 are those who have come to your website or app before. They are returning users if they have visited at least once, even if they did not interact during that visit. To obtain a summary of your repeat visitors, select Reports > Retention. Next, begin by comparing new and returning users within a given time frame.
+                        </p>
+
+                        <p class="sm:mb-2 mb-0">&nbsp</p>
+                        <h2 id="Returning Users" class="text-lg sm:text-xl font-bold sm:mb-6 mb-4">
+                            Why is the users count not equal to the sum of the New and Returning Users?
+                        </h2>
+                        <p class="sm:mb-6 mb-4">Total Users is not the sum of New + Returning Users. Total Users as part of a summary row or scorecard is deduplicated in order to provide a count of people (real unique visitors). As an example, imagine that during the month of July, a person from the same device and IP visited a website three times. For the first session (visit) the user was counted as New User, since they hadn't visited before. On their second and third visit, they are counted as Returning Users. At the end of the month, only 1 user visited the website (Total User). In a breakdown report for visitor type, they are counted thrice, (1) New User and (2) Returning Users.
+                        </p>
+
+                    </section>
+                    
+                </div>
+           
+                <!-- pagination---------------------------------------------------------------------------------->
+                <div class="mx-auto md:w-8/12 pr-4 pt-2 mt-10  mb-6 flex justify-between items-center  border-t border-[#F0F0F0]">
+                    <div>
+                        <a class="flex justify-center  items-center group cursor-pointer" src="#" title="prev">
+                            <svg class="mr-1" width="22" height="8" viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                                <path class="group-hover:fill-[#1D9EE0]  transition duration-200"    d="M21 4.5C21.2761 4.5 21.5 4.27614 21.5 4C21.5 3.72386 21.2761 3.5 21 3.5V4.5ZM0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM21 3.5L1 3.5V4.5L21 4.5V3.5Z" fill="#474747"/>
+                            </svg> 
+                            <span class="text-stone-900 group-hover:text-[#1D9EE0]  transition duration-200">Prev</span>
+                        </a>
+                    </div>
+               
+                    <div>
+                        <a class="flex justify-center  items-center group cursor-pointer" src="#" title="next">
+                            <span class="mr-1 text-stone-900 group-hover:text-[#1D9EE0]  transition duration-200">Next</span>
+                            <svg class="rotate-180" width="22" height="8" viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                                <path class="group-hover:fill-[#1D9EE0]  transition duration-200"    d="M21 4.5C21.2761 4.5 21.5 4.27614 21.5 4C21.5 3.72386 21.2761 3.5 21 3.5V4.5ZM0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM21 3.5L1 3.5V4.5L21 4.5V3.5Z" fill="#474747"/>
+                            </svg> 
+                        </a>
+                    </div>
+                </div><!-- #pagination-->
+                        
+            </div>
+
+    </section><!-- #blog-->
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer class="bg-[#121C2D] relative overflow-hidden">
+        <img  class="absolute top-20 lg:w-[500px] w-[600px] " src="./img/map-decor-db.png" alt="map"/>
+        <img  class="absolute bottom-0 right-20 lg:w-[500px] hidden xl:block" src="./img/map-decor-db.png" alt="map"/>
+
+        <div class="container relative mx-auto px-4 py-10 ">
+
+            <div class="mb-6">
+                <a href="#" class="header__link-logo block py-5 w-[120px] " title="logo">
+                    <img src="./img/Logo.png" class="header__logo-img" alt="Logo">
+                </a>
+            </div>
+
+
+            <div id="menu_footer" class="flex flex-wrap  text-white font-Mont justify-between">
+
+                <ul class="lg:w-3/12 w-6/12 mb-7 md:text-base text-sm">
+                    <li class="mb-4 font-semibold text-base">Solutions</li>
+                    <li class="mb-4 hover:text-[#1D9EE0] transition duration-300"><a href="#" title="Why Publytics?">Why Publytics?</a></li>
+                    <li class="mb-4 hover:text-[#1D9EE0] transition duration-300"><a href="#" title="Changelog">Changelog</a></li>
+                    <li class="mb-4 hover:text-[#1D9EE0] transition duration-300"><a href="#" title="Referral">Referral</a></li>
+                </ul>
+
+                <ul class="lg:w-3/12 w-6/12 mb-7 md:text-base text-sm">
+                    <li class="mb-4 font-semibold text-base">Company</li>
+                    <li class="mb-4 hover:text-[#1D9EE0] transition duration-300"><a href="#" title="About us">About us</a></li>
+                    <li class="mb-4 hover:text-[#1D9EE0] transition duration-300"><a href="#" title="Contact us">Contact us</a></li>
+                </ul>
+        
+                <ul class="lg:w-3/12 w-6/12 mb-7 md:text-base text-sm">
+                    <li class="mb-4 font-semibold text-base">Support</li>
+                    <li class="mb-4 hover:text-[#1D9EE0] transition duration-300"><a href="#" title="FAQ">FAQ</a></li>
+                    <li class="mb-4 hover:text-[#1D9EE0] transition duration-300"><a href="#" title="Pricing">Pricing</a></li>
+                    <li class="mb-4 hover:text-[#1D9EE0] transition duration-300"><a href="#" title="Documentation">Documentation</a></li>
+                    <li class="mb-4 hover:text-[#1D9EE0] transition duration-300"><a href="#" title="API Documentation">API Documentation</a></li>
+                    <li class="mb-4 hover:text-[#1D9EE0] transition duration-300"><a href="#" title="System Status">System Status</a></li>
+                    <li class="mb-4 hover:text-[#1D9EE0] transition duration-300"><a href="#" title="URL Builde">URL Builder</a></li>
+                </ul>
+
+                <ul class="lg:w-3/12  w-6/12 mb-7 md:text-base text-sm">
+                    <li class="mb-4 font-semibold text-base">Legal</li>
+                    <li class="mb-4 hover:text-[#1D9EE0] transition duration-300"><a href="#" title=" DPA">DPA</a></li>
+                    <li class="mb-4 hover:text-[#1D9EE0] transition duration-300"><a href="#" title="Data Policy">Data Policy</a></li>
+                    <li class="mb-4 hover:text-[#1D9EE0] transition duration-300"><a href="#" title="Privacy">Privacy</a></li>
+                    <li class="mb-4 hover:text-[#1D9EE0] transition duration-300"><a href="#" title="Terms"> Terms</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <span class="mb-2  block basis-10/12 border-t border-[#D9D9D9]"></span>
+                <p class="mb-2 text-white font-semibold">Subscribe to our social networks</p>
+                <ul class="flex">
+                    <li class="mr-2"><a href="#" title="facebook link"><img src="./img/icons/icon_facebook.svg" alt="facebook icon"/></a></li>
+                    <li class="mr-2"><a href="#" title="twitter link"><img src="./img/icons/icon_twitter.svg" alt="twitter icon"/></a></li>
+                    <li class="mr-2"><a href="#" title="telegra link"><img src="./img/icons/icon_telegram.svg" alt="telegram icon"/></a></li>
+                    <li class="mr-2"><a href="#" title="youtube link"><img src="./img/icons/icon_youtube.svg" alt="youtube icon"/></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+    <!-- #footer -->
+
+
+
+</div> <!-- #Wrapper  -->
+ 
+
+
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

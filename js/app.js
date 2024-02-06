@@ -1,6 +1,4 @@
 
-//console.log('Boambele')
-
 
 
 //Burgher
@@ -9,9 +7,6 @@
 let burger = document.querySelector('.burger__menu');
 //const burger_mobile = document.querySelector('.burger__menu-2');
 //const menu_mobile = document.querySelector('.sidebar ')
-
-
-
 
 // Функция для переключения меню
 function toggleMenu() {
@@ -34,7 +29,7 @@ burger.addEventListener('click', toggleMenu);
 
 
 
-  //------------------------------------------------------------------------------
+//faq tab ------------------------------------------------------------------------------
 $(".faq-title ").click(function(){
     // Используем метод slideToggle() для анимации показа/скрытия questions-attribute-options
     $(this).next(".faq-text").slideToggle();
@@ -43,6 +38,10 @@ $(".faq-title ").click(function(){
     
 
 
+
+
+
+//Slick-carousel------------------------------------------------------------------------------
 $(".slick-carousel").slick({
   dots: false,
   arrows: false,
@@ -74,7 +73,7 @@ $(".slick-carousel").slick({
   }, {
     breakpoint: 520,
     settings: {
-      slidesToShow: 2,
+      slidesToShow: 3,
     }
 
   }
