@@ -8,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20240119181650" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css" >
-    <link rel="stylesheet" href="css/utils.css" >
+    <link rel="stylesheet" href="css/custom_style.css" >
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
@@ -36,9 +38,9 @@
                 </div>
                 <nav class="basis-8/12  lg:flex  hidden items-center justify-center ">
                     <ul class="flex font-Mont font-semibold">
-                        <li class="px-5"><a href="" title="Pricing" class="text-white hover:text-[#1D9EE0] transition duration-300">Pricing</a></li>
-                        <li class="px-5"><a href="#" title="Contact Us" class="text-white hover:text-[#1D9EE0] transition duration-300">Contact Us</a></li>
-                        <li class="px-5"><a href="#" title="Faq" class="text-white hover:text-[#1D9EE0] transition duration-300">Faq</a></li>
+                        <li class="px-5"><a href="http://127.0.0.1:5500/#pricing" title="Pricing" class="text-white hover:text-[#1D9EE0] transition duration-300">Pricing</a></li>
+                        <li class="px-5"><a href="/contact.html" title="Contact Us" class="text-white hover:text-[#1D9EE0] transition duration-300">Contact Us</a></li>
+                        <li class="px-5"><a href="/faq.html" title="Faq" class="text-white hover:text-[#1D9EE0] transition duration-300">Faq</a></li>
                         <li class="px-5"><a href="/blog.html" title="Blog" class="text-white hover:text-[#1D9EE0] transition duration-300">Blog</a></li>
                     </ul>
                 </nav>
@@ -62,11 +64,42 @@
         </div>
     </header>
 
+    <!-- mobile menu  ----------------------------------  -->
+    <div class="menu-mobile menu-mobile_active  fixed  right-0 top-0 h-full w-[260px] z-[200] bg-[#121C2D] p-6 ">
+        
+        <div  id class="menu-close  flex justify-end">
+            <div class="burger__menu-2 lg:hidden activeBurger-2 "  id="burger__menu-2">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
 
+        <nav class="mb-4 mt-4">
+            <ul class="font-Mont font-semibold">
+                <li class="p-2"><a href="/" title="Home" class="text-white hover:text-[#1D9EE0] transition duration-300">Home</a></li>
+                <li class="p-2"><a href="http://127.0.0.1:5500/#pricing" title="Pricing" class="text-white hover:text-[#1D9EE0] transition duration-300">Pricing</a></li>
+                <li class="p-2"><a href="/contact.html" title="Contact Us" class="text-white hover:text-[#1D9EE0] transition duration-300">Contact Us</a></li>
+                <li class="p-2"><a href="/faq.html" title="Faq" class="text-white hover:text-[#1D9EE0] transition duration-300">Faq</a></li>
+                <li class="p-2"><a href="/blog.html" title="Blog" class="text-white hover:text-[#1D9EE0] transition duration-300">Blog</a></li>
+            </ul>
+        </nav>
+        <div >
+            <span class="mb-2  block basis-10/12 border-t border-[#D9D9D9]"></span>
+            <ul class="flex justify-around">
+                <li class="mr-2"><a href="#" title="facebook link"><img src="./img/icons/icon_facebook.svg" alt="facebook icon"/></a></li>
+                <li class="mr-2"><a href="#" title="twitter link"><img src="./img/icons/icon_twitter.svg" alt="twitter icon"/></a></li>
+                <li class="mr-2"><a href="#" title="telegra link"><img src="./img/icons/icon_telegram.svg" alt="telegram icon"/></a></li>
+                <li class="mr-2"><a href="#" title="youtube link"><img src="./img/icons/icon_youtube.svg" alt="youtube icon"/></a></li>
+            </ul>
+        </div>
+    </div>
 
    
+    <!-- blog section  ----------------------------------  -->
     <section id="blog_section" class="container mx-auto sm:my-10 my-4 px-4">
-       
+
         <div class="px-4  sm:py-10 pb-4 pt-6 rounded-2xl border border-solid border-gray-100    bg-white ">
             <!-- title  ------------------------------------------------------------------------------>
             <div id="title_blog" class="mb-10">
@@ -111,14 +144,14 @@
 
                     <div class="md:flex py-8 xl:mr-4 border-b border-[#F0F0F0]">
                         <div class="md:w-5/12 w-full md:mr-4 md:mb-0 mb-4 flex justify-center items-center">
-                            <a class="sm:w-5/6 md:w-full" href="/singleBlog.htm" title="mg blog">
+                            <a class="sm:w-5/6 md:w-full" href="/post.html" title="mg blog">
                                 <img  src="./img/blog_img.png" alt="blog img"/>
                             </a>
                         </div>
                         <div class="md:w-7/12 w-full ">
                             <p class="text-xs text-[#6B6B6B] font-light mb-1">Mar 16, 2020 | Author: Info Publytics</p>
                             <h4 class="lg:w-5/6 font-semibold mb-2 hover:text-[#1D9EE0] transition duration-200">
-                                <a href="/singleBlog.html" title="">Google Analytics 4 (GA4) Not Reporting Real-Time Data? An In-Depth Guide</a></h4>
+                                <a href="/post.html" title="">Google Analytics 4 (GA4) Not Reporting Real-Time Data? An In-Depth Guide</a></h4>
                             <p class="lx:mb-4 mb-2 xl:text-base text-sm">
                                 You don't know why GA4 is not showing real-time data of your website? Don't worry, in this article we'll explain why it could happen and how you can easily fix it.
                             
@@ -129,14 +162,14 @@
 
                     <div class="md:flex py-8 xl:mr-4 border-b border-[#F0F0F0]">
                         <div class="md:w-5/12 w-full md:mr-4 md:mb-0 mb-4 flex justify-center items-center">
-                            <a class="sm:w-5/6 md:w-full" href="/singleBlog.html" title="mg blog">
+                            <a class="sm:w-5/6 md:w-full" href="/post.html" title="mg blog">
                                 <img  src="./img/blog_img.png" alt="blog img"/>
                             </a>
                         </div>
                         <div class="md:w-7/12 w-full ">
                             <p class="text-xs text-[#6B6B6B] font-light mb-1">Mar 16, 2020 | Author: Info Publytics</p>
                             <h4 class="lg:w-5/6 font-semibold mb-2 hover:text-[#1D9EE0] transition duration-200">
-                                <a href="/singleBlog.html" title="">Google Analytics 4 (GA4) Not Reporting Real-Time Data? An In-Depth Guide</a></h4>
+                                <a href="/post.html" title="">Google Analytics 4 (GA4) Not Reporting Real-Time Data? An In-Depth Guide</a></h4>
                             <p class="lx:mb-4 mb-2 xl:text-base text-sm">
                                 You don't know why GA4 is not showing real-time data of your website? Don't worry, in this article we'll explain why it could happen and how you can easily fix it.
                             
@@ -147,14 +180,14 @@
                 
                     <div class="md:flex py-8 xl:mr-4 border-b border-[#F0F0F0]">
                         <div class="md:w-5/12 w-full md:mr-4 md:mb-0 mb-4 flex justify-center items-center">
-                            <a class="sm:w-5/6 md:w-full" href="/singleBlog.html" title="mg blog">
+                            <a class="sm:w-5/6 md:w-full" href="/post.html" title="mg blog">
                                 <img  src="./img/blog_img.png" alt="blog img"/>
                             </a>
                         </div>
                         <div class="md:w-7/12 w-full ">
                             <p class="text-xs text-[#6B6B6B] font-light mb-1">Mar 16, 2020 | Author: Info Publytics</p>
                             <h4 class="lg:w-5/6 font-semibold mb-2 hover:text-[#1D9EE0] transition duration-200">
-                                <a href="/singleBlog.html" title="">Google Analytics 4 (GA4) Not Reporting Real-Time Data? An In-Depth Guide</a></h4>
+                                <a href="/post.html" title="">Google Analytics 4 (GA4) Not Reporting Real-Time Data? An In-Depth Guide</a></h4>
                             <p class="lx:mb-4 mb-2 xl:text-base text-sm">
                                 You don't know why GA4 is not showing real-time data of your website? Don't worry, in this article we'll explain why it could happen and how you can easily fix it.
                             
@@ -165,14 +198,14 @@
 
                     <div class="md:flex py-8 xl:mr-4 border-b border-[#F0F0F0]">
                         <div class="md:w-5/12 w-full md:mr-4 md:mb-0 mb-4 flex justify-center items-center">
-                            <a class="sm:w-5/6 md:w-full" href="/singleBlog.html" title="mg blog">
+                            <a class="sm:w-5/6 md:w-full" href="/post.html" title="mg blog">
                                 <img  src="./img/blog_img.png" alt="blog img"/>
                             </a>
                         </div>
                         <div class="md:w-7/12 w-full ">
                             <p class="text-xs text-[#6B6B6B] font-light mb-1">Mar 16, 2020 | Author: Info Publytics</p>
                             <h4 class="lg:w-5/6 font-semibold mb-2 hover:text-[#1D9EE0] transition duration-200">
-                                <a href="/singleBlog.html" title="">Google Analytics 4 (GA4) Not Reporting Real-Time Data? An In-Depth Guide</a></h4>
+                                <a href="/post.html" title="">Google Analytics 4 (GA4) Not Reporting Real-Time Data? An In-Depth Guide</a></h4>
                             <p class="lx:mb-4 mb-2 xl:text-base text-sm">
                                 You don't know why GA4 is not showing real-time data of your website? Don't worry, in this article we'll explain why it could happen and how you can easily fix it.
                             
@@ -183,14 +216,14 @@
 
                     <div class="md:flex py-8 xl:mr-4 border-b border-[#F0F0F0]">
                         <div class="md:w-5/12 w-full md:mr-4 md:mb-0 mb-4 flex justify-center items-center">
-                            <a class="sm:w-5/6 md:w-full" href="/singleBlog.html" title="mg blog">
+                            <a class="sm:w-5/6 md:w-full" href="/post.html" title="mg blog">
                                 <img  src="./img/blog_img.png" alt="blog img"/>
                             </a>
                         </div>
                         <div class="md:w-7/12 w-full ">
                             <p class="text-xs text-[#6B6B6B] font-light mb-1">Mar 16, 2020 | Author: Info Publytics</p>
                             <h4 class="lg:w-5/6 font-semibold mb-2 hover:text-[#1D9EE0] transition duration-200">
-                                <a href="/singleBlog.html" title="">Google Analytics 4 (GA4) Not Reporting Real-Time Data? An In-Depth Guide</a></h4>
+                                <a href="/post.html" title="">Google Analytics 4 (GA4) Not Reporting Real-Time Data? An In-Depth Guide</a></h4>
                             <p class="lx:mb-4 mb-2 xl:text-base text-sm">
                                 You don't know why GA4 is not showing real-time data of your website? Don't worry, in this article we'll explain why it could happen and how you can easily fix it.
                             
@@ -201,7 +234,7 @@
                     
 
                     <!-- pagination---------------------------------------------------------------------------------->
-                    <div class="pr-4 mt-6  mb-6 flex justify-between items-center ">
+                    <div class="xl:pr-4 mt-6  mb-6 flex justify-between items-center ">
                             <div>
                                 <a class="flex justify-center  items-center group cursor-pointer" src="#" title="prev">
                                     <svg class="mr-1" width="22" height="8" viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg" >
@@ -293,23 +326,9 @@
       
        
 
-    </section><!-- #blog-->
+    </section><!-- #blog section-->
 
  
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- footer -->
     <footer class="bg-[#121C2D] relative overflow-hidden">

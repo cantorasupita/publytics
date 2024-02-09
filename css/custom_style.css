@@ -1,0 +1,248 @@
+.outline {
+    outline: 1px solid red;
+}
+
+html, body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+html,
+:host  {
+    font-family: Inter,
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+
+
+
+/* menu burger=================================================================*/
+.burger__menu, .burger__menu-2 {
+    position: relative;
+    width: 20px;
+    height: 18px;
+}
+
+.menu-mobile  {
+  transition: 0.3s all;
+}
+.menu-mobile_active {
+  right: -260px;
+
+}
+
+
+.burger__menu span, .burger__menu-2 span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+.burger__menu span:nth-child(1),
+.burger__menu-2 span:nth-child(1) {
+  display: block;
+  top: 0;
+  transition: 0.3s all;
+}
+.burger__menu span:nth-child(2),
+.burger__menu-2 span:nth-child(2) {
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s all;
+}
+.burger__menu span:nth-child(3),
+.burger__menu-2 span:nth-child(3) {
+  display: block;
+  bottom: 0;
+  transition: 0.3s all;
+}
+
+.activeBurger,
+.activeBurger-2 {
+   
+    translate: .5s all;
+}
+.activeBurger span:nth-child(1),
+.activeBurger-2 span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%)  rotate(45deg);
+}
+
+.activeBurger span:nth-child(2), 
+.activeBurger-2 span:nth-child(2) {
+  opacity: 0;
+}
+
+.activeBurger span:nth-child(3),
+.activeBurger-2 span:nth-child(3) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* carousel heroSection========================================================*/
+.slick-carousel-1 .slick-track {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+
+.slick-carousel-1 .slick-active {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+
+
+
+
+
+
+/* switch checkbox ===========================================================*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 136px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e4e4e4;
+  transition: .4s;
+  border-radius: 34px;
+
+}
+
+
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 70px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #0177B3;
+  transition: .4s;
+  border-radius: 12px;
+}
+
+input:checked + .slider:before {
+  transform: translateX(72px); /* Вираховуємо ширину кнопки вмикнення */
+  width: 58px;
+}
+
+
+
+.btn-1 {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  padding: 6px 11px;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.4s;
+}
+
+.btn-2 {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  bottom: 0;
+  padding: 6px 12px;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.4s;
+}
+
+
+.active_btn {
+  color: white;
+}
+
+
+
+
+.grey {
+  -webkit-appearance: none;
+  -moz-appearance: none; /* Firefox */
+  background-color: #D0D0D0;
+  width: 100%;
+  height: 4px;
+
+}
+
+.grey::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  background: #006497;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url('../img/icons/icon_price.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+.grey::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  background: #005b88;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-image: url('../img/icons/icon_price.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+
+
+
+

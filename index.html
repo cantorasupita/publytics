@@ -8,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20240119181650" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css" >
-    <link rel="stylesheet" href="css/utils.css" >
+    <link rel="stylesheet" href="css/custom_style.css" >
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
@@ -36,9 +38,9 @@
                 </div>
                 <nav class="basis-8/12  lg:flex  hidden items-center justify-center ">
                     <ul class="flex font-Mont font-semibold">
-                        <li class="px-5"><a href="#" title="Pricing" class="text-white hover:text-[#1D9EE0] transition duration-300">Pricing</a></li>
-                        <li class="px-5"><a href="#" title="Contact Us" class="text-white hover:text-[#1D9EE0] transition duration-300">Contact Us</a></li>
-                        <li class="px-5"><a href="#" title="Faq" class="text-white hover:text-[#1D9EE0] transition duration-300">Faq</a></li>
+                        <li class="px-5"><a href="#pricing" title="Pricing" class="text-white hover:text-[#1D9EE0] transition duration-300">Pricing</a></li>
+                        <li class="px-5"><a href="/contact.html" title="Contact Us" class="text-white hover:text-[#1D9EE0] transition duration-300">Contact Us</a></li>
+                        <li class="px-5"><a href="/faq.html" title="Faq" class="text-white hover:text-[#1D9EE0] transition duration-300">Faq</a></li>
                         <li class="px-5"><a href="/blog.html" title="Blog" class="text-white hover:text-[#1D9EE0] transition duration-300">Blog</a></li>
                     </ul>
                 </nav>
@@ -58,10 +60,43 @@
                     <span></span>
                     <span></span>
                 </div>
+ 
             </div>
         </div>
     </header>
 
+   <!-- mobile menu  ----------------------------------  -->
+   <div class="menu-mobile menu-mobile_active  fixed  right-0 top-0 h-full w-[260px] z-[200] bg-[#121C2D] p-6 ">
+
+        <!-- menu-close  ----------------------------------  -->
+        <div  id class="menu-close  flex justify-end">
+            <div class="burger__menu-2 lg:hidden activeBurger-2 "  id="burger__menu-2">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    
+
+        <nav class="mb-4 mt-4">
+            <ul class="font-Mont font-semibold">
+                <li class="p-2"><a href="/" title="Home" class="text-white hover:text-[#1D9EE0] transition duration-300">Home</a></li>
+                <li class="p-2"><a href="#pricing" title="Pricing" class="text-white hover:text-[#1D9EE0] transition duration-300">Pricing</a></li>
+                <li class="p-2"><a href="/contact.html" title="Contact Us" class="text-white hover:text-[#1D9EE0] transition duration-300">Contact Us</a></li>
+                <li class="p-2"><a href="/faq.html" title="Faq" class="text-white hover:text-[#1D9EE0] transition duration-300">Faq</a></li>
+                <li class="p-2"><a href="/blog.html" title="Blog" class="text-white hover:text-[#1D9EE0] transition duration-300">Blog</a></li>
+            </ul>
+        </nav>
+        <div >
+            <span class="mb-2  block basis-10/12 border-t border-[#D9D9D9]"></span>
+            <ul class="flex justify-around">
+                <li class="mr-2"><a href="#" title="facebook link"><img src="./img/icons/icon_facebook.svg" alt="facebook icon"/></a></li>
+                <li class="mr-2"><a href="#" title="twitter link"><img src="./img/icons/icon_twitter.svg" alt="twitter icon"/></a></li>
+                <li class="mr-2"><a href="#" title="telegra link"><img src="./img/icons/icon_telegram.svg" alt="telegram icon"/></a></li>
+                <li class="mr-2"><a href="#" title="youtube link"><img src="./img/icons/icon_youtube.svg" alt="youtube icon"/></a></li>
+            </ul>
+        </div>
+    </div>
 
 
     <!-- heroSection  ----------------------------------  -->
@@ -104,11 +139,11 @@
 
 
 
-            <div class="lg:hidden lg:w-7/12 2xl:w-6/12 w-full pt-10">
+            <div class="lg:hidden lg:w-7/12 2xl:w-6/12 w-full pt-10 pb-6">
                
                 <div id="inputContainer" class="flex  justify-between  bg-white  xl:mb-8  mb-6 2xl:p-2 p-1 2xl:w-[568px] w-full rounded-lg ">
-                    <input class=" sm:w-auto w-7/12 text-gray-800 text-base font-normal p-2 mr-2 border-none bg-white rounded-lg" type="text" placeholder="Enter Email Adress"/>
-                    <a class="bg-[#059669] hover:bg-[#00c788] transition duration-300 sm:w-auto w-5/12 text-white rounded-lg md:text-base text-sm font-semibold text-center xl:py-3 py-2 xl:px-8 px-4" href="#" title="Start free trial">Start free trial</a>
+                    <input class="  w-full text-gray-800 text-base font-normal p-2 mr-2 border-none bg-white rounded-lg" type="text" placeholder="Enter Email Adress"/>
+                    <a class="bg-[#059669] hover:bg-[#00c788] transition duration-300 w-[230px]  text-white rounded-lg md:text-base text-sm font-semibold text-center xl:py-3 py-2 xl:px-8 px-4" href="#" title="Start free trial">Start free trial</a>
                 </div>
 
                 <button id="btnDemo" class="flex lg:mb-10 mb-10 xl:py-3 py-2 xl:px-6 sm:px-4  px-2 border border-white hover:bg-[#001f31] transition duration-300 bg-transparent rounded-md items-center ">
@@ -120,7 +155,7 @@
 
 
             <div class="flex justify-center items-center">
-                <ul class="slick-carousel lg:w-5/6 w-full flex justify-around items-center">
+                <ul class="slick-carousel-1 lg:w-5/6 w-full flex justify-around items-center">
 
                     <li class="basis-1/6 flex justify-center items-center  group ">
                         <a  class="" href="#" title="engage">
@@ -174,7 +209,7 @@
         <div class="container  mx-auto px-4 xl:py-20 py-14">
 
             <p class="text-[#959595] text-sm font-light mb-0">Advantages</p>
-            <h2 class="xl:text-[28px] sm:text-[22px] text-[20px]  xl:leading-8  leading-6  font-bold font-Mont mb-3"><span class="text-transparent bg-clip-text bg-gradient-to-b from-[#348DE0] to-[#004381]">Why Publytics as a Google <br/></span> Analytics Alternative?</h2>
+            <h2 class="xl:text-[28px] sm:text-[22px] text-[20px]  xl:leading-8  leading-6  font-bold font-Mont mb-3"><span class="text-transparent bg-clip-text bg-gradient-to-b from-sky-600 to-sky-900">Why Publytics as a Google <br/></span> Analytics Alternative?</h2>
             <div class="mb-12">
                 <img src="./img/subtitle-dekor-line.svg" alt="arrow"/>
             </div>
@@ -313,7 +348,7 @@
 
             <div class="xl:basis-4/12  basis-12/12   pr-2 text-black">
                 <p class="text-[#A3A3A3] text-sm font-light mb-0">Everything you need</p>
-                <h2 class="xl:text-[28px] sm:text-[22px] text-[20px]  xl:leading-8  leading-6  font-bold  font-Mont mb-2 "><span class="text-transparent bg-clip-text bg-gradient-to-b from-[#348DE0] to-[#004381]">For Publishers </span>by Publishers</h2>
+                <h2 class="xl:text-[28px] sm:text-[22px] text-[20px]  xl:leading-8  leading-6  font-bold  font-Mont mb-2 "><span class="text-transparent bg-clip-text bg-gradient-to-b from-sky-600 to-sky-900">For Publishers </span>by Publishers</h2>
                 <div class="mb-12">
                     <img src="./img/subtitle-dekor-line.svg" alt="arrow"/>
                 </div>
@@ -477,10 +512,8 @@
 
 
 
-
-    
      <!--Price  -->
-     <section  id="price" class="relative bg-gradient-to-br from-[#0b5580] to-[#002236]">
+     <section  id="pricing" class="relative bg-gradient-to-br from-[#0b5580] to-[#002236]">
 
         <img  class="absolute top-20  right-0 xl:left-0 lg:w-[500px] w-[700px] z-[0] " src="./img/map-decor-db.png" alt="map"/>
         <img  class="absolute bottom-0 right-20 lg:w-[500px] hidden xl:block z-[0]" src="./img/map-decor-db.png" alt="map"/>
@@ -499,39 +532,38 @@
             </div>
             
            
-            <div class="bg-white p-7 rounded-3xl">
+            <div class="bg-white sm:p-6 p-4 rounded-3xl">
                 <h3 class="md:text-3xl text-2xl font-bold font-Mont text-center mb-2">Сhoose your plan</h3>
                 <div class="flex justify-center">
-                    <p class="text-center text-sm mb-4 ">The subscription covers all your sites, listed below, but also other sites that you
+                    <p class="text-center text-sm mb-8 lg:w-3/6 sm:w-4/6 w-full">The subscription covers all your sites, listed below, but also other sites that you
                         will register as owner after the subscription (as long as the hits limit is not exceeded).</p>
                 </div>
                 
 
                 <div class="mb-10">
-                    <div class="flex justify-between font-semibold text-[#818181] text-sm">
+                    <div class="flex justify-between font-semibold text-gray-500 text-sm">
                         <span>Page Views / Mo.</span>
                         <span>Price</span>
                     </div>
-                    <div class="flex justify-between font-bold font-Mont text-xl mb-5">
-                        <span>10k</span>
-                        <span>€ 5 / month</span>
+                    <div class="flex justify-between font-bold font-Mont text-2xl mb-1">
+                        <span class="text-sky-800" id="rangeValueView">10k</span>
+                        <span class="text-sky-800" id="rangeValuePrice">€ 5 / mo</span>
                     </div>
 
                     <div class="relative">
-                        <div class="absolute flex items-center justify-center  -top-4 h-[35px] w-[35px]  bg-gradient-to-b from-[#027EBD] to-[#006091] rounded-full">
-                            <img src="./img/icons/arrow-2.svg" alt="icon arrow"/>
-                        </div>
-                        <div class="h-[4px] w-full bg-[#D0D0D0]"></div>
+                        <input id="praceRange" class="grey" type="range" min="10" max="90" value="10"  step="10" oninput="updateSpan(this.value)"/>
                     </div>
                 </div>
 
 
                 <div class="flex items-center justify-center mb-4">
-                    <div class="rounded-3xl bg-[#F2F2F2] inline-block p-[5px] mr-2">
-                        <button class="bg-[#006396] py-1 px-2 rounded-3xl text-sm text-white" type="text" value="monthly">Monthly</button>
-                        <button class="py-1 px-2 text-sm " type="text" value="yearly">Yearly</button>
-                    </div>
-                    <span class="text-sm text-[#035BAD]">2 months free</span>
+                    <label class="switch mr-2">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                        <span class="btn-1 active_btn text-center">Monthly</span>  
+                        <span class="btn-2">Yearly</span>
+                      </label>
+                      <span class="text-sm text-sky-600">2 months free</span>
                 </div>
 
 
@@ -539,15 +571,15 @@
 
                     <div class="p-5 mr-5 mb-4 rounded-2xl border border-solid border-gray-100 md:w-[350px] w-full">
                         <div class="-mt-2 relative text-black font-Mont text-[64px] font-bold ">
-                            <span class="text-5xl">€</span><span>5</span>
-                            <span class="text-xl -m-4">/ month</span>
-                            <span class="absolute left-20 top-4 text-base text-[#A6A6A6] line-through">€ 7.5</span>
+                            <span id="evro" class="md:text-4xl text-2xl">€</span><span class="md:text-5xl text-4xl"  id="rangeValueBigPrice">5</span>
+                            <span  id="month" class="text-xl -m-4">/ month</span>
+                            <span id="oldPrice" class="absolute left-0 top-1 text-base text-gray-400 line-through">€ 7.5</span>
                         </div>
                         <p class="text-sm mb-6">
                             Get a 14-day trial with monthly subscriptions and a 2-month 
                             free trial with annual subscriptions. Unlock exclusive benefits now!
                         </p>
-                        <a class="block w-full bg-gradient-to-b from-[#027EBD] to-[#006091] text-white rounded-lg text-base font-semibold text-center py-3 px-8" href="#" title="Start free trial">Buy Plan</a>
+                        <a class="block w-full  bg-sky-700 hover:bg-sky-600 transition duration-150 text-white rounded-lg text-base font-semibold text-center py-3 px-8" href="#" title="Start free trial">Buy Plan</a>
                     </div>
 
                     <div class="basis-8/12 flex flex-col justify-center">
@@ -575,7 +607,6 @@
         </div>
         
     </section><!-- #advantages   -->
-
 
 
 
@@ -654,8 +685,8 @@
         <div class="container  mx-auto px-4 xl:py-20 py-14 ">
 
             <p class="text-[#959595] text-sm font-light mb-0">FAQ</p>
-            <h2 class="xl:text-[28px] sm:text-[22px] text-[20px] leading-8 font-bold font-Mont mb-2"><span class="text-transparent bg-clip-text bg-gradient-to-b from-[#348DE0] to-[#004381]">Frequently Asked</span> Questions </h2>
-            <div class="mb-12">
+            <h2 class="xl:text-[28px] sm:text-[22px] text-[20px] leading-8 font-bold font-Mont mb-2"><span class="text-transparent bg-clip-text bg-gradient-to-b from-sky-600 to-sky-900">Frequently Asked</span> Questions </h2>
+            <div class="sm:mb-12 mb-6">
                 <img src="./img/subtitle-dekor-line.svg" alt="arrow"/>
             </div>
 
@@ -663,26 +694,26 @@
                 <ul class="lg:w-6/12 lg:mr-3">
                     <li class="pt-5 pb-3  border-b border-[#EDEDED]">
                        
-                        <div class="faq-title flex group cursor-pointer hover:fill-cyan-700  hover:text-[#1D9EE0] transition duration-300 items-start justify-between">
-                            <h6 class="text-base mb-3 font-bold lg:w-5/6">Can I import my Google Analytics (GA3 / Universal Analytics / GA4) data?</h6>
-                            <svg  class="mt-2" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="faq-title flex items-start justify-between group cursor-pointer hover:fill-cyan-700  hover:text-[#1D9EE0] transition duration-300 ">
+                            <h6 class="sm:text-base text-sm mb-3 font-bold lg:w-5/6 mr-2">Can I import my Google Analytics (GA3 / Universal Analytics / GA4) data?</h6>
+                            <svg  class="mt-2 flex-none" width="16"  height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path  class="group-hover:fill-cyan-700"  d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95263 15.4616 1.31946 15.0711 0.928939C14.6805 0.538415 14.0474 0.538414 13.6569 0.928938L8 6.58579L2.34315 0.928927C1.95263 0.538402 1.31946 0.538401 0.928938 0.928925C0.538414 1.31945 0.538413 1.95261 0.928937 2.34314L7.29289 8.70711ZM7 7L7 8L9 8L9 7L7 7Z" fill="#767676"/>
                             </svg>
                                 
                         </div>
-                        <p class="hide faq-text">
+                        <p class="hide faq-text sm:text-base text-sm">
                             You can easily import your Google Analytics collected data, so that you will have the possibility to have the historical data. 
                             Just contact us to import the data after following our guide in the 'Import data' section, once you are registered.
                         </p>
                     </li>
                     <li class="pt-5 pb-3 border-b border-[#EDEDED]">
                         <div class="faq-title  flex group cursor-pointer hover:text-[#1D9EE0] transition duration-300 items-start justify-between">
-                            <h6 class="text-base mb-3 font-bold">Does Publytics do data sampling?</h6>
-                            <svg  class="mt-2" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <h6 class="sm:text-base text-sm  mb-3 font-bold mr-2">Does Publytics do data sampling?</h6>
+                            <svg  class="mt-2 flex-none" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path  class="group-hover:fill-cyan-700"  d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95263 15.4616 1.31946 15.0711 0.928939C14.6805 0.538415 14.0474 0.538414 13.6569 0.928938L8 6.58579L2.34315 0.928927C1.95263 0.538402 1.31946 0.538401 0.928938 0.928925C0.538414 1.31945 0.538413 1.95261 0.928937 2.34314L7.29289 8.70711ZM7 7L7 8L9 8L9 7L7 7Z" fill="#767676"/>
                             </svg>
                         </div>
-                        <p class="hide faq-text">
+                        <p class="hide faq-text sm:text-base text-sm ">
                             Analytics tools including Google Analytics do data sampling for all their reports. 
                             It means that to make fastest request to databases these tools pick only a subset of the entire 
                             dataset and estimate many values in their reports. Unlike them Publytics does not do any data sampling by default.
@@ -691,24 +722,24 @@
                     </li>
                     <li class="pt-5 pb-3 cursor-pointer  border-b border-[#EDEDED]">
                         <div class="faq-title  flex group items-start justify-between  hover:text-[#1D9EE0] transition duration-300">
-                            <h6 class="text-base mb-3 font-bold">Does Publytics exclude spam traffic and bots?</h6>
-                            <svg  class="mt-2" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <h6 class="sm:text-base text-sm  mb-3 font-bold mr-2">Does Publytics exclude spam traffic and bots?</h6>
+                            <svg  class="mt-2 flex-none" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path  class="group-hover:fill-cyan-700"  d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95263 15.4616 1.31946 15.0711 0.928939C14.6805 0.538415 14.0474 0.538414 13.6569 0.928938L8 6.58579L2.34315 0.928927C1.95263 0.538402 1.31946 0.538401 0.928938 0.928925C0.538414 1.31945 0.538413 1.95261 0.928937 2.34314L7.29289 8.70711ZM7 7L7 8L9 8L9 7L7 7Z" fill="#767676"/>
                             </svg>
                         </div>
-                        <p class="hide faq-text">
+                        <p class="hide faq-text sm:text-base text-sm ">
                             Publytics is a client-side analytics, and this means that we count only visitors that run JavaScript.
                             It automatically excludes bots, crawlers and other known non-human activity by default.
                         </p>
                     </li>
                     <li class="pt-5 pb-3 cursor-pointer  border-b border-[#EDEDED]">
                         <div class="faq-title  flex group items-start justify-between hover:text-[#1D9EE0] transition duration-300">
-                            <h6 class="text-base mb-3 font-bold">Do numbers add up in the dashboard?</h6>
-                            <svg  class="mt-2" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <h6 class="sm:text-base text-sm  mb-3 font-bold mr-2">Do numbers add up in the dashboard?</h6>
+                            <svg  class="mt-2 flex-none" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path  class="group-hover:fill-cyan-700"  d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95263 15.4616 1.31946 15.0711 0.928939C14.6805 0.538415 14.0474 0.538414 13.6569 0.928938L8 6.58579L2.34315 0.928927C1.95263 0.538402 1.31946 0.538401 0.928938 0.928925C0.538414 1.31945 0.538413 1.95261 0.928937 2.34314L7.29289 8.70711ZM7 7L7 8L9 8L9 7L7 7Z" fill="#767676"/>
                             </svg>
                         </div>
-                        <p class="hide faq-text">
+                        <p class="hide faq-text sm:text-base text-sm">
                             It is a common question among our users. Sometimes you will notice that numbers in the dashboard are not adding up. 
                             For example you can see a total number of unique users which is different from the sum of all the visitors in the tables. 
                             It all depends from the fact that on the Audience / Dashboard section we show the amount of unique sessions and users among all the pages,
@@ -717,12 +748,12 @@
                     </li>
                     <li class="pt-5 pb-3 cursor-pointer border-b border-[#EDEDED]">
                         <div class="faq-title flex group items-start justify-between hover:text-[#1D9EE0] transition duration-300 "> 
-                            <h6 class="text-base mb-3 font-bold">How can I pay for the subscription?</h6>
-                            <svg  class="mt-2" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <h6 class="sm:text-base text-sm  mb-3 font-bold mr-2">How can I pay for the subscription?</h6>
+                            <svg  class="mt-2 flex-none" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path  class="group-hover:fill-cyan-700"  d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95263 15.4616 1.31946 15.0711 0.928939C14.6805 0.538415 14.0474 0.538414 13.6569 0.928938L8 6.58579L2.34315 0.928927C1.95263 0.538402 1.31946 0.538401 0.928938 0.928925C0.538414 1.31945 0.538413 1.95261 0.928937 2.34314L7.29289 8.70711ZM7 7L7 8L9 8L9 7L7 7Z" fill="#767676"/>
                             </svg>
                         </div>
-                        <p class="hide faq-text">
+                        <p class="hide faq-text sm:text-base text-sm">
                             It is possible to pay with credit and debit card since the billing gateway is Stripe. We allow check payments for Custom Pricing. We do not allow Paypal payments.
                              Payments recur every month or year, depending on what plan you choose. Notice that our staff will inform you if you exceed the number of pageviews allowed in your 
                              subscription to ensure that you will purchase a new subscription for a higher number of pageviews.
@@ -733,12 +764,12 @@
                 <ul class="lg:w-6/12  lg:ml-3">
                     <li class="pt-5 pb-3  border-b border-[#EDEDED]">
                         <div class="faq-title flex group cursor-pointer hover:text-[#1D9EE0] transition duration-300 items-start justify-between"> 
-                            <h6 class="text-base mb-3 font-bold">What happens if I exceed the number of pageviews provided by my subscription?</h6>
-                            <svg  class="mt-2" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <h6 class="sm:text-base text-sm  mb-3 font-bold mr-2">What happens if I exceed the number of pageviews provided by my subscription?</h6>
+                            <svg  class="mt-2  flex-none " width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path  class="group-hover:fill-cyan-700"  d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95263 15.4616 1.31946 15.0711 0.928939C14.6805 0.538415 14.0474 0.538414 13.6569 0.928938L8 6.58579L2.34315 0.928927C1.95263 0.538402 1.31946 0.538401 0.928938 0.928925C0.538414 1.31945 0.538413 1.95261 0.928937 2.34314L7.29289 8.70711ZM7 7L7 8L9 8L9 7L7 7Z" fill="#767676"/>
                             </svg>
                         </div>
-                        <p class="hide faq-text">
+                        <p class="hide faq-text sm:text-base text-sm ">
                             In this case you will receive an alert about this problem both via e-mail and on the dashboard. 
                             You will be requested to upgrade your subscription to a new one with a higher pageviews limit. In this case,
                             you will be able too keep using Publytics for 3 days, but after this period you will not be able to see anything.
@@ -748,12 +779,12 @@
                     </li>
                     <li class="pt-5 pb-3  border-b border-[#EDEDED]">
                         <div class="faq-title flex group cursor-pointer hover:text-[#1D9EE0] transition duration-300 items-start justify-between"> 
-                            <h6 class="text-base mb-3 font-bold">What happens if I cancel the subscription or I do not pay for it?</h6>
-                            <svg  class="mt-2" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <h6 class="sm:text-base text-sm  mb-3 font-bold mr-2">What happens if I cancel the subscription or I do not pay for it?</h6>
+                            <svg  class="mt-2 flex-none" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path  class="group-hover:fill-cyan-700"  d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95263 15.4616 1.31946 15.0711 0.928939C14.6805 0.538415 14.0474 0.538414 13.6569 0.928938L8 6.58579L2.34315 0.928927C1.95263 0.538402 1.31946 0.538401 0.928938 0.928925C0.538414 1.31945 0.538413 1.95261 0.928937 2.34314L7.29289 8.70711ZM7 7L7 8L9 8L9 7L7 7Z" fill="#767676"/>
                             </svg>
                         </div>
-                        <p class="hide faq-text">
+                        <p class="hide faq-text sm:text-base text-sm ">
                             If you cancel the subscription, you will not be charged after the end of your billing cycle, but the access to the dashboard will be prevented in at most 3 days.
                             We will still collect data from your website for a certain amount of time, so that you can restore the subscription and avoid losing any historical data.
                         </p>
@@ -761,25 +792,25 @@
     
                     <li class="pt-5 pb-3  border-b border-[#EDEDED]">
                         <div class="faq-title flex group cursor-pointer hover:text-[#1D9EE0] transition duration-300 items-start justify-between"> 
-                            <h6 class="text-base mb-3 font-bold">How can I upgrade my subscription?</h6>
-                            <svg  class="mt-2" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <h6 class="sm:text-base text-sm  mb-3 font-bold mr-2">How can I upgrade my subscription?</h6>
+                            <svg  class="mt-2 flex-none" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path  class="group-hover:fill-cyan-700"  d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95263 15.4616 1.31946 15.0711 0.928939C14.6805 0.538415 14.0474 0.538414 13.6569 0.928938L8 6.58579L2.34315 0.928927C1.95263 0.538402 1.31946 0.538401 0.928938 0.928925C0.538414 1.31945 0.538413 1.95261 0.928937 2.34314L7.29289 8.70711ZM7 7L7 8L9 8L9 7L7 7Z" fill="#767676"/>
                             </svg>
                         </div>
-                        <p class="hide faq-text">
+                        <p class="hide faq-text sm:text-base text-sm ">
                             You can upgrade your subscription from monthly to annually recurring payments,
                              or change the pageviews limit by upgrading to a higher plan, through the Upgrade Plans section of the Dashboard.
                         </p>
                     </li> 
                     <li class="pt-5 pb-3  border-b border-[#EDEDED]">
                         <div class="faq-title flex group cursor-pointer hover:text-[#1D9EE0] transition duration-300  items-start justify-between">
-                            <h6 class="text-base mb-3 font-bold">What are the metrics and their definitions?</h6>
-                            <svg  class="mt-2" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <h6 class="sm:text-base text-sm  mb-3 font-bold mr-2">What are the metrics and their definitions?</h6>
+                            <svg  class="mt-2 flex-none" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path  class="group-hover:fill-cyan-700"  d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95263 15.4616 1.31946 15.0711 0.928939C14.6805 0.538415 14.0474 0.538414 13.6569 0.928938L8 6.58579L2.34315 0.928927C1.95263 0.538402 1.31946 0.538401 0.928938 0.928925C0.538414 1.31945 0.538413 1.95261 0.928937 2.34314L7.29289 8.70711ZM7 7L7 8L9 8L9 7L7 7Z" fill="#767676"/>
                             </svg>
                         </div>
                        
-                        <ol class="hide faq-text">
+                        <ol class="hide faq-text sm:text-base text-sm ">
                             <p>Publytics provides a lot of metrics to analyze your website. Here is a list of the most important ones and their definitions:</p>
                             <li>Pageviews: the number of times a certain page was visited, even counting repeated visits by the same users in the same sessions.</li>
                             <li> Unique Pageviews: the number of users that visited at least one time a certain page. This means that users that refresh repeatedly one page are counted only once.</li>
@@ -798,10 +829,6 @@
                 </ul>
             </div>
            
-
-
-            
-
         </div>
     </section> <!-- #faq-->
 
@@ -816,17 +843,19 @@
                 <img  class="absolute top-3 sm:left-0  -left-7 md:w-[500px]  w-[400px]" src="./img/bg-decor-2.png" alt="bg img"/>
                 <img  class="absolute hidden lg:block bottom-0 right-0  md:w-[500px]  w-[400px]" src="./img/bg-decor-1.png" alt="bg img"/>
 
-                <ul class="flex relative flex-wrap text-white px-4">
+                <ul class="flex relative flex-wrap text-white sm:px-4 px-2">
                     <li class="lg:w-1/2 w-2/2 mb-4 lg:mb-0">
-                        <h2 class="2xl:text-[28px] text-[22px] font-bold font-Mont mb-1.5 text-white"><span class=" text-transparent bg-clip-text bg-gradient-to-b from-[#77D1FF] to-[#37A8E1]">Subscribe to our</span> platform right now</h2>
+                        <h2 class="2xl:text-[28px] text-[22px] leading-6 font-bold font-Mont mb-1.5 text-white"><span class=" text-transparent bg-clip-text bg-gradient-to-b from-[#77D1FF] to-[#37A8E1]">Subscribe to our</span> platform right now</h2>
                         <p class="xl:w-3/4 lg:text-base text-sm">Easy traffic tiers make for straightforward pricing. Access free for 14 days. No credit card required.</p>
                     </li>
                     <li class=" lg:w-1/2 w-full flex items-center justify-start ">
                         <div id="inputContainer" class="flex  justify-between  bg-white   2xl:p-2 p-1 2xl:w-[568px] w-full rounded-lg ">
-                            <input class=" sm:w-auto w-6/12 text-gray-800 text-base font-normal p-2 mr-2 border-none bg-white rounded-lg" type="text" placeholder="Enter Email Adress"/>
-                            <a class="bg-[#059669] sm:w-auto w-6/12 text-white rounded-lg md:text-base text-sm font-semibold text-center xl:py-3 py-2 xl:px-8 px-4" href="#" title="Start free trial">Start free trial</a>
+                            <input class=" sm:w-8/12 w-full text-gray-800 text-base font-normal p-2 mr-2 border-none bg-white rounded-lg" type="text" placeholder="Enter Email Adress"/>
+                            <a class="bg-[#059669]  sm:w-4/12 w-[240px] text-white rounded-lg md:text-base text-sm font-semibold text-center xl:py-3 py-2 xl:px-8 px-4" href="#" title="Start free trial">Start free trial</a>
                         </div>
+                       
                     </li>
+                   
                 </ul>
             </div>
             
@@ -841,13 +870,13 @@
     <section id="testimonials">
         <div class="container  mx-auto px-4 xl:py-20 py-14 ">
             <p class="text-[#959595] text-sm font-light  mb-0">Testimonials</p>
-            <h2 class="xl:text-[28px] text-[22px] xl:leading-8  md:leading-6  font-bold font-Mont mb-3"><span class="text-transparent bg-clip-text bg-gradient-to-b from-[#348DE0] to-[#004381]">What they</span> say about us</h2>
+            <h2 class="xl:text-[28px] text-[22px] xl:leading-8  md:leading-6  font-bold font-Mont mb-3"><span class="text-transparent bg-clip-text bg-gradient-to-b from-sky-600 to-sky-900">What they</span> say about us</h2>
             <div class="mb-12">
                 <img src="./img/subtitle-dekor-line.svg" alt="arrow"/>
             </div>
 
 
-            <ul class="grid  sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+            <ul class=" grid  sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 ">
 
                 <li class="p-6 rounded-xl border border-solid border-gray-100 shadow-md">
                     <div class="icon mb-6 flex justify-between">
@@ -969,7 +998,6 @@
         
         </div>
     </section>  <!--testimonials-->
-
 
 
 
