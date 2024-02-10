@@ -2187,6 +2187,12 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-x-sky-950 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(8 47 73 / var(--tw-border-opacity));
+  border-right-color: rgb(8 47 73 / var(--tw-border-opacity));
+}
+
 .bg-\[\#003350\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 51 80 / var(--tw-bg-opacity));
@@ -2594,6 +2600,10 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .text-left {
@@ -3200,6 +3210,11 @@ video {
   --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
 }
 
+.ring-gray-800 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(31 41 55 / var(--tw-ring-opacity));
+}
+
 .blur {
   --tw-blur: blur(8px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -3395,6 +3410,11 @@ video {
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
+.hover\:border-sky-800:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(7 89 133 / var(--tw-border-opacity));
+}
+
 .hover\:bg-\[\#001f31\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 31 49 / var(--tw-bg-opacity));
@@ -3443,6 +3463,14 @@ video {
   color: rgb(2 132 199 / var(--tw-text-opacity));
 }
 
+.hover\:outline-sky-800:hover {
+  outline-color: #075985;
+}
+
+.hover\:outline-sky-600:hover {
+  outline-color: #0284c7;
+}
+
 .before\:hover\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
@@ -3451,6 +3479,10 @@ video {
 .hover\:before\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
+}
+
+.focus\:outline-sky-600:focus {
+  outline-color: #0284c7;
 }
 
 .focus\:ring-2:focus {
@@ -3468,12 +3500,21 @@ video {
   --tw-ring-color: rgb(2 132 199 / var(--tw-ring-opacity));
 }
 
+.focus\:ring-indigo-600:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(79 70 229 / var(--tw-ring-opacity));
+}
+
 .focus\:hover\:text-center:hover:focus {
   text-align: center;
 }
 
 .hover\:focus\:text-center:focus:hover {
   text-align: center;
+}
+
+.active\:outline-sky-600:active {
+  outline-color: #0284c7;
 }
 
 .group:hover .group-hover\:border-\[\#1D9EE0\] {
@@ -3583,6 +3624,10 @@ video {
 
   .sm\:items-start {
     align-items: flex-start;
+  }
+
+  .sm\:items-center {
+    align-items: center;
   }
 
   .sm\:gap-4 {

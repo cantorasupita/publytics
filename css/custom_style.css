@@ -161,7 +161,7 @@ html,
 }
 
 input:checked + .slider:before {
-  transform: translateX(72px); /* Вираховуємо ширину кнопки вмикнення */
+  transform: translateX(70px); /* Вираховуємо ширину кнопки вмикнення */
   width: 58px;
 }
 
