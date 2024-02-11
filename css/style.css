@@ -2827,6 +2827,10 @@ video {
   line-height: 1.25;
 }
 
+.leading-7 {
+  line-height: 1.75rem;
+}
+
 .text-\[\#0170A9\] {
   --tw-text-opacity: 1;
   color: rgb(1 112 169 / var(--tw-text-opacity));
@@ -3641,6 +3645,11 @@ video {
     padding-top: 13rem;
   }
 
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -3667,11 +3676,6 @@ video {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .sm\:font-semibold {
