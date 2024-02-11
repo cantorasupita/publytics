@@ -1,35 +1,40 @@
 
 
-
-//Burgher
+//Burgher Menu
 //================================================================================
-// Получаем ссылки на бургер и меню
 const  burger = document.querySelector('.burger__menu');
 const  menuClose = document.querySelector('.menu-close')
 const menu_mobile = document.querySelector('.menu-mobile')
+const menu_mobile_Link = document.querySelector('.menu-mobile__link')
+const menu_wrapper = document.getElementById('menu_wrapper')
 
 
-// Функция для переключения меню
+//Menu switching function
 function openMenu() {
     burger.classList.toggle('activeBurger');
     menu_mobile.classList.toggle('menu-mobile_active')
     document.body.style.overflowY = 'hidden'; 
+    document.documentElement.style.overflow = 'hidden'
+    menu_wrapper.style.display = 'block'
 }
 
 function closeMenu(){
   menu_mobile.classList.toggle('menu-mobile_active')
   burger.classList.toggle('activeBurger');
+  document.documentElement.style.overflow = ''
+  document.body.style.overflowY = ''; 
+  menu_wrapper.style.display = 'none'
 }
 
 
-// Добавляем обработчик события для бургера
+// Add an event handler for the burger
 burger.addEventListener('click', openMenu);
 menuClose.addEventListener('click', closeMenu)
+menu_mobile_Link.addEventListener('click', closeMenu)
+menu_wrapper.addEventListener('click', closeMenu)
 
 
-
-
-//Slick-carousel------------------------------------------------------------------------------
+//Slick-carousel==================================================================
 $(".slick-carousel-1").slick({
   dots: false,
   arrows: false,
@@ -72,7 +77,7 @@ $(".slick-carousel-1").slick({
 
 
 
-//=====================================================================================================
+//Faq===========================================================================================
 $(".faq-title ").click(function(){
     $(this).next(".faq-text").slideToggle();
 });
@@ -82,6 +87,8 @@ $(".faq-title ").click(function(){
 
 
 //price=========================================================================================
+const pricing = document.getElementById('pricing')
+
 let tarif = true;
 const praceRange = document.getElementById('praceRange')
 const range = document.querySelector('.grey')
@@ -93,20 +100,18 @@ const oldPrice = document.getElementById('oldPrice')
 
 
 $(".btn-2").click(function(){
-  tarif = false
-  console.log(tarif)
-  $(this).toggleClass('active_btn')
-  $(".btn-1").toggleClass('active_btn')
-  updateSpan(range.value)
+    tarif = false
+    $(this).toggleClass('active_btn')
+    $(".btn-1").toggleClass('active_btn')
+    updateSpan(range.value)
 });
    
 
 $(".btn-1").click(function(){
-  tarif = true
-   console.log(tarif)
-   $(this).toggleClass('active_btn')
-   $(".btn-2").toggleClass('active_btn')
-   updateSpan(range.value)
+    tarif = true
+    $(this).toggleClass('active_btn')
+    $(".btn-2").toggleClass('active_btn')
+    updateSpan(range.value)
 });
 
 
@@ -119,7 +124,7 @@ function updateSpan(value) {
     document.getElementById('oldPrice').textContent = nearest.oldPrice;
 
 
-    console.log(value)
+   
     if(value == 90) {
         document.getElementById('rangeValueBigPrice').innerHTML =  `<a href="#" class="text-3xl text-sky-700 underline decoration-solid" title="Contact Us">Contact Us</a>`;
         document.getElementById('rangeValuePrice').innerHTML =  `<a href="#" class="text-xl text-sky-700 underline decoration-solid" title="Contact Us">Contact Us</a>`;
@@ -248,142 +253,142 @@ function findNearest(value) {
 
 
 
+//anchor link-----------------------------------------------------
+if(pricing){
+  const anchors = document.querySelectorAll('a[href*="#"]')
 
-
-
-let submitForm = document.getElementById("submitForm");
-
-
-
-//validation
-function validateForm() {
- 
-  let email = document.getElementById("email");
-  let monthNumber = document.getElementById("monthNumber");
-  let message = document.getElementById("message");
-  let howUs = document.getElementById("howUs");
-  let objectSelect = document.getElementById("objectSelect")
-  let checkFomr = document.getElementById("checkFomr")
-  let succes_form = document.getElementById('succes_form')
-
-  let validEmail =  document.getElementById('validEmail')
-  let monthValid =  document.getElementById('monthValid')
-  let messageValid = document.getElementById('messageValid')
-  let howUsValid = document.getElementById('howUsValid')
-  
- 
-
-  // Перевірка електронної пошти за допомогою регулярного виразу
-  let emailRegex = /^\S+@\S+\.\S+$/;
-  if (!emailRegex.test(email.value)) {
-      validEmail.textContent = "This email is not correct.";
-      return false;
-  }else {
-    validEmail.textContent = "";
-    succes_form.textContent = ""
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+      const blockID = anchor.getAttribute('href').substr(1)
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    })
   }
-  
-  // Перевірка місяця на правильний діапазон
-  if (monthNumber.value < 1 || monthNumber.value > 12) {
-      monthValid.textContent = "Hits number is required if the object custom plan is selected";
-      return false;
-  }else{
-    monthValid.textContent = ""
-    succes_form.textContent = ""
-  }
-  
-  // Перевірка, що повідомлення не порожнє
-  if (message.value.trim() === "") {
-      messageValid.textContent = "Message field is required.";
-      return false;
-  }else{
-    messageValid.textContent = ""
-    succes_form.textContent = ""
-  }
-  
-  // Перевірка, що поле "Як ви дізналися про нас" не порожнє
-  if (howUs.value.trim() === "") {
-      howUsValid.textContent = "You can not submit if you do not accept our privacy policy.";
-      return false;
-  }else{
-    howUsValid.textContent = ""
-    succes_form.textContent = ""
-  }
- 
-  
-    return true
-
   
 }
 
 
 
-submitForm.addEventListener('click', function(e){
-  e.preventDefault()
-  let obj = {
+
+
+
+
+
+
+//form==============================================================================================
+const contact_us = document.getElementById('contact_us')
+
+if(contact_us){
+
+    let submitForm = document.getElementById("submitForm");
+
+    //validation form -------------------------------------------------
+    function validateForm() {
+    
+      let email = document.getElementById("email");
+      let monthNumber = document.getElementById("monthNumber");
+      let message = document.getElementById("message");
+      let howUs = document.getElementById("howUs");
+      let objectSelect = document.getElementById("objectSelect")
+      let checkFomr = document.getElementById("checkFomr")
+      let succes_form = document.getElementById('succes_form')
+    
+      let validEmail =  document.getElementById('validEmail')
+      let monthValid =  document.getElementById('monthValid')
+      let messageValid = document.getElementById('messageValid')
+      let howUsValid = document.getElementById('howUsValid')
+      
+    
+    
+      // Validate email using a regular expression
+      let emailRegex = /^\S+@\S+\.\S+$/;
+      if (!emailRegex.test(email.value)) {
+          validEmail.textContent = "This email is not correct.";
+          return false;
+      }else {
+        validEmail.textContent = "";
+        succes_form.textContent = ""
+      }
+      
+      // Checking the month for the correct range
+      if (monthNumber.value < 1 || monthNumber.value > 12) {
+          monthValid.textContent = "Hits number is required if the object custom plan is selected";
+          return false;
+      }else{
+        monthValid.textContent = ""
+        succes_form.textContent = ""
+      }
+      
+      // Checking that the message is not empty
+      if (message.value.trim() === "") {
+          messageValid.textContent = "Message field is required.";
+          return false;
+      }else{
+        messageValid.textContent = ""
+        succes_form.textContent = ""
+      }
+      
+      // Checking that the "How did you find out about us" field is not empty
+      if (howUs.value.trim() === "") {
+          howUsValid.textContent = "You can not submit if you do not accept our privacy policy.";
+          return false;
+      }else{
+        howUsValid.textContent = ""
+        succes_form.textContent = ""
+      }
+    
+      return true
+    }
   
-  }
-  if(validateForm()){
-      obj.email = email.value
-      obj.monthNumber = monthNumber.value
-      obj.message = message.value
-      obj.howUs = howUs.value
-      obj.objectSelect = objectSelect.value
-      obj.checkFomr =  checkFomr.value
-      succes_form.textContent = 'application sent successfully'
-
-      email.value = ""
-      monthNumber.value = ""
-      message.value = ""
-      howUs.value = ""
-
-  }
-    console.log(obj)
-})
-
-
-
-
-
-
-
-
-
-
-//copy mail =============================================================================================================
-let textToCopy = document.getElementById("textToCopy");
-
-let coppyIcon = document.getElementById("coppyIcon");
-let galocikaIcon = document.getElementById("galocikaIcon");
-
-
-function copyTextToClipboard() {
   
-  $('#coppyIcon').toggle()
-  $('#galocikaIcon').toggle()
-  // Выбираем текстовый элемент
-  var textToCopy = document.getElementById("textToCopy");
-  
-  // Создаем временный элемент для копирования текста
-  var tempElement = document.createElement("textarea");
-  tempElement.value = textToCopy.textContent;
-  
-  // Добавляем временный элемент в документ
-  document.body.appendChild(tempElement);
-  
-  // Выбираем текст во временном элементе
-  tempElement.select();
-  
-  // Копируем текст в буфер обмена
-  document.execCommand("copy");
-  
-  // Удаляем временный элемент
-  document.body.removeChild(tempElement);
+    submitForm.addEventListener('click', function(e){
+      e.preventDefault()
+      let obj = {}
+      if(validateForm()){
+          obj.email = email.value
+          obj.monthNumber = monthNumber.value
+          obj.message = message.value
+          obj.howUs = howUs.value
+          obj.objectSelect = objectSelect.value
+          obj.checkFomr =  checkFomr.value
+          succes_form.textContent = 'application sent successfully'
+    
+          email.value = ""
+          monthNumber.value = ""
+          message.value = ""
+          howUs.value = ""
+      }
+        console.log(obj)
+    })
   
 
+    //copy mail =============================================================================================================
+    let textToCopy = document.getElementById("textToCopy");
+    let coppyIcon = document.getElementById("coppyIcon");
+    let galocikaIcon = document.getElementById("galocikaIcon");
+  
+    function copyTextToClipboard() {
+      $('#coppyIcon').toggle()
+      $('#galocikaIcon').toggle()
+      var textToCopy = document.getElementById("textToCopy");
+      // Create a temporary element for copying text
+      var tempElement = document.createElement("textarea");
+      tempElement.value = textToCopy.textContent;
+      // Add a temporary element to the document
+      document.body.appendChild(tempElement);
+      // Select the text in the temporary element
+      tempElement.select();
+      // Copy the text to the clipboard
+      document.execCommand("copy");
+      // We delete the temporary element
+      document.body.removeChild(tempElement);
+    }
+    
+    textToCopy.addEventListener('click',  copyTextToClipboard)
+    
+    
 }
-
-
-textToCopy.addEventListener('click',  copyTextToClipboard)
-
 
